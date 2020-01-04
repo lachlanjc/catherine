@@ -218,6 +218,7 @@ const theme = merge(base, {
       width: '100%',
       maxWidth: ['narrowplus', null, null, null, 'container'],
       mx: 'auto',
+      px: 3,
       ...textStyles
     },
     wide: {
