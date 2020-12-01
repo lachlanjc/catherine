@@ -1,10 +1,10 @@
-import { base } from '@theme-ui/presets'
-import { merge } from 'lodash'
+import base from '@theme-ui/preset-base'
+import { merge } from 'theme-ui'
 
 export const breakpoints = [32, 48, 64, 96, 128].map(w => `${w}em`)
 
 const heading = {
-  // fontFamily: 'heading',
+  fontFamily: 'body',
   lineHeight: 'heading',
   fontWeight: 'heading',
   letterSpacing: 'heading'

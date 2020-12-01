@@ -1,4 +1,4 @@
-import { Container, Box } from '@theme-ui/components'
+import { Container, Box } from 'theme-ui'
 
 export const Banner = props => (
   <Container

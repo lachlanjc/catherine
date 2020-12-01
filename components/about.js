@@ -1,4 +1,4 @@
-import { Box, Text } from '@theme-ui/components'
+import { Box, Text } from 'theme-ui'
 
 export const Experience = ({ time, title, place, bigplace, children }) => (
   <Box

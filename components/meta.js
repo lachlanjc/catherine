@@ -4,7 +4,7 @@ import { palette } from './theme'
 const name = 'Catherine Campbell'
 const makeTitle = title => (title === name ? title : `${title} – ${name}`)
 
-export default ({
+const Meta = ({
   title = name,
   description = 'Listing of upcoming high school hackathons around the world.',
   image = 'https://catherine.lachlanjc.now.sh/card.png',
@@ -62,3 +62,5 @@ export default ({
     />
   </Head>
 )
+
+export default Meta
