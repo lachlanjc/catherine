@@ -1,6 +1,6 @@
-import { Container } from '@theme-ui/components'
+import { Container } from 'theme-ui'
 
-export default ({ children }) => (
+const Books = ({ children }) => (
   <Container
     sx={{
       'h1, h2': { mb: 0, textAlign: 'center' },
@@ -36,3 +36,5 @@ export default ({ children }) => (
     {children}
   </Container>
 )
+
+export default Books

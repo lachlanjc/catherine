@@ -1,7 +1,7 @@
 import React from 'react'
 import App from 'next/app'
-import { ThemeProvider, ColorMode } from 'theme-ui'
-import { Global } from '@emotion/core'
+import { ThemeProvider } from 'theme-ui'
+// import { Global } from '@emotion/core'
 
 import theme, { root } from '../components/theme'
 import Meta from '../components/meta'
@@ -16,8 +16,7 @@ class Root extends App {
       <>
         <Meta />
         <ThemeProvider theme={theme}>
-          <ColorMode />
-          <Global styles={theme => ({ body: root(theme) })} />
+          {/* <Global styles={theme => ({ body: root(theme) })} /> */}
           <NProgress color={theme.colors.primary} />
           <Nav />
           <Component {...pageProps} />

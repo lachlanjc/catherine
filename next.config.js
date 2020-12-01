@@ -1,2 +1,5 @@
-const withMDX = require('@zeit/next-mdx')({ extension: /\.mdx?$/ })
-module.exports = withMDX({ pageExtensions: ['js', 'jsx', 'mdx'] })
+const withMDX = require('@next/mdx')({ extension: /\.mdx?$/ })
+module.exports = withMDX({
+  experimental: { optimizeFonts: true },
+  pageExtensions: ['js', 'mdx']
+})
