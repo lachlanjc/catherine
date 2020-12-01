@@ -8,10 +8,11 @@ const Footer = () => (
         alignItems: 'center',
         justifyContent: 'center',
         color: 'muted',
+        fontSize: 1,
         a: { color: 'inherit' }
       }}
     >
-      Site by <a href="https://lachlanjc.com">@lachlanjc</a>
+      <a href="https://github.com/lachlanjc/catherine">Open source</a>
     </Container>
   </Box>
 )
