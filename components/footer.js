@@ -10,13 +10,13 @@ const Footer = () => (
         alignItems: 'center',
         justifyContent: 'center',
         color: 'muted',
-        fontSize: 1,
-        svg: { fill: 'currentColor', mr: 3 }
+        fontSize: 0,
+        svg: { stroke: 'currentColor', mr: 3 }
       }}
       as="a"
       href="https://github.com/lachlanjc/catherine"
     >
-      <GitHub />
+      <GitHub size={20} />
       View source code
     </Container>
   </Box>
