@@ -93,9 +93,6 @@ const Nav = () => (
       <Link href="/portfolio" passHref>
         <NavLink>Portfolio</NavLink>
       </Link>
-      <Link href="/books" passHref>
-        <NavLink>Bookshelf</NavLink>
-      </Link>
       <ColorSwitcher />
     </Container>
   </Box>
