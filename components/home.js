@@ -7,14 +7,13 @@ export const Banner = props => (
       py: [4, 5],
       display: 'grid',
       gridGap: [4, 5],
-      gridTemplateColumns: [null, '2fr 3fr'],
+      gridTemplateColumns: [null, null, '2fr 3fr'],
       alignItems: 'center',
       'p:first-of-type': {
         gridRow: [2, 'auto'],
         my: 0
       },
       img: {
-        maxWidth: '100%',
         borderRadius: 'extra'
       },
       h1: {
