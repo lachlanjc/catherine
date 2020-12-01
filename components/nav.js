@@ -89,9 +89,7 @@ const Nav = () => (
           </NavLink>
         </Flex>
       </Link>
-      <Link href="/cv" passHref>
-        <NavLink>CV</NavLink>
-      </Link>
+      <NavLink href="/cv.pdf">CV</NavLink>
       <Link href="/portfolio" passHref>
         <NavLink>Portfolio</NavLink>
       </Link>
