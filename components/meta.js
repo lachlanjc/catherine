@@ -6,7 +6,7 @@ const makeTitle = title => (title === name ? title : `${title} – ${name}`)
 
 const Meta = ({
   title = name,
-  description = 'Listing of upcoming high school hackathons around the world.',
+  description = 'Catherine Campbell is an M.A. student in Peace and Social Transformation at the Earlham School of Religion.',
   image = 'https://catherine.lachlanjc.now.sh/card.png',
   color = palette.primary
 }) => (
