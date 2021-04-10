@@ -104,7 +104,7 @@ const Nav = () => {
             </NavLink>
           </Flex>
         </Link>
-        <NavLink href="/cv.pdf" sx={{ ml: 'auto' }}>
+        <NavLink href="/cv/catherine_campbell.pdf" sx={{ ml: 'auto' }}>
           CV
         </NavLink>
         <Link href="/portfolio" passHref>
