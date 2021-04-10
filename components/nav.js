@@ -3,8 +3,8 @@ import {
   Box,
   Container,
   IconButton,
-  Flex,
   NavLink,
+  Text,
 } from 'theme-ui'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
@@ -18,6 +18,8 @@ const NavButton = ({ sx, ...props }) => (
       color: 'muted',
       borderRadius: 'circle',
       transition: 'box-shadow .125s ease-in-out',
+      width: 48,
+      height: 48,
       ':hover,:focus': {
         boxShadow: '0 0 0 2px',
         outline: 'none',
@@ -67,22 +69,16 @@ const Nav = () => {
         }}
       >
         <Link href="/" passHref>
-          <Flex
-            as="a"
-            sx={{
-              alignItems: 'center',
-            }}
-          >
+          <NavLink sx={{ height: 48, flexGrow: 1 }}>
             {pathname !== '/' && (
               <Box
-                as="a"
                 sx={{
+                  lineHeight: 0,
                   width: 48,
                   height: 48,
                   borderRadius: 'circle',
                   overflow: 'hidden',
                   display: ['inline-block', 'none'],
-                  mr: 2,
                 }}
               >
                 <Image
@@ -93,7 +89,8 @@ const Nav = () => {
                 />
               </Box>
             )}
-            <NavLink
+            <Text
+              as="span"
               sx={{
                 display: ['none', 'inline-block'],
                 fontWeight: 'bold !important',
@@ -101,10 +98,10 @@ const Nav = () => {
               }}
             >
               Catherine Campbell
-            </NavLink>
-          </Flex>
+            </Text>
+          </NavLink>
         </Link>
-        <NavLink href="/cv/catherine_campbell.pdf" sx={{ ml: 'auto' }}>
+        <NavLink as="a" href="/cv/catherine_campbell.pdf">
           CV
         </NavLink>
         <Link href="/portfolio" passHref>
