@@ -59,11 +59,11 @@ const Nav = () => {
           display: 'flex',
           alignItems: 'center',
           a: {
-            fontSize: 2,
+            fontSize: [1, 2],
             color: 'text',
             fontWeight: 'body',
             textDecoration: 'none',
-            mr: 4,
+            mr: [3, 4],
             ':focus,:hover': { color: 'muted' },
           },
         }}
@@ -106,6 +106,9 @@ const Nav = () => {
         </NavLink>
         <Link href="/portfolio" passHref>
           <NavLink>Portfolio</NavLink>
+        </Link>
+        <Link href="/tutoring" passHref>
+          <NavLink>Tutoring</NavLink>
         </Link>
         <ColorSwitcher />
       </Container>

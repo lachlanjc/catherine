@@ -1,4 +1,11 @@
-import { Container } from 'theme-ui'
+import { Container, Flex } from 'theme-ui'
+
+export const Actions = (props) => (
+  <Flex
+    sx={{ flexWrap: 'wrap', alignItems: 'center', a: { mr: 4 } }}
+    {...props}
+  />
+)
 
 const Banner = (props) => (
   <Container
