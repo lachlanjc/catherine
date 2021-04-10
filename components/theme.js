@@ -84,7 +84,7 @@ const theme = merge(base, {
     ...palette,
     text: palette.black,
     background: palette.sand,
-    elevated: palette.white,
+    elevated: palette.sandLight,
     sunken: palette.smoke,
     border: palette.border,
     primary: palette.primary,
@@ -204,16 +204,10 @@ const theme = merge(base, {
   },
   cards: {
     primary: {
-      bg: 'sandLight',
+      bg: 'elevated',
       color: 'text',
       p: [3, 4],
       borderRadius: 'extra',
-    },
-    sunken: {
-      bg: 'sunken',
-      p: [3, 4],
-      borderRadius: 'extra',
-      'input, a': { bg: 'header', boxShadow: 'none !important' },
     },
   },
   layout: {
@@ -252,11 +246,11 @@ const theme = merge(base, {
       borderColor: 'border',
     },
     mark: {
-      borderRadius: '1em 0',
+      borderRadius: '0.75em 0.25em',
       color: 'inherit',
       backgroundColor: 'transparent',
       backgroundImage:
-        'linear-gradient(-100deg, rgba(250, 247, 133, 0.33), rgba(250, 247, 133, 0.75) 95%, rgba(250, 247, 133, 0.25))',
+        'linear-gradient(-100deg, rgba(250, 247, 133, 0.2), rgba(250, 247, 133, 0.4) 95%, rgba(250, 247, 133, 0.3))',
     },
   },
 })
