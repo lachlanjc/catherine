@@ -1,6 +1,6 @@
-import { Container, Box } from 'theme-ui'
+import { Container } from 'theme-ui'
 
-export const Banner = props => (
+const Banner = (props) => (
   <Container
     {...props}
     sx={{
@@ -11,24 +11,26 @@ export const Banner = props => (
       alignItems: 'center',
       'p:first-of-type': {
         gridRow: [2, 'auto'],
-        my: 0
+        my: 0,
       },
       img: {
-        borderRadius: 'extra'
+        borderRadius: 'extra',
       },
       h1: {
         fontSize: [4, 5],
         fontWeight: 'heading',
         lineHeight: 'tight',
         mt: [0, -2, -3],
-        mb: 3
+        mb: 3,
       },
       h2: {
         fontSize: [2, 3],
         fontWeight: 'normal',
         lineHeight: 'subheading',
-        mb: 4
-      }
+        mb: 4,
+      },
     }}
   />
 )
+
+export default Banner

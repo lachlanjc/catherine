@@ -1,9 +1,9 @@
-import { Banner } from '../components/home'
+import Layout from '../components/home'
+export default Layout
+
 import { Container, Flex, Button } from 'theme-ui'
 import { Mail, Twitter, BookOpen } from 'react-feather'
 import Image from 'next/image'
-
-<Banner>
 
 <Image
   alt="Portrait of Catherine Campbell smiling"
@@ -14,7 +14,7 @@ import Image from 'next/image'
   priority
 />
 
-<div>
+<article>
 
 # Catherine Campbell
 
@@ -37,11 +37,9 @@ I am a member of the [Monthly Meeting of Friends of Philadelphia](https://www.fg
     href="https://www.goodreads.com/user_challenges/26613336"
   >
     <BookOpen />
-    2020 Books
+    2021 Books
   </Button>
   (she/her)
 </Flex>
 
-</div>
-
-</Banner>
+</article>

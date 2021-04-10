@@ -101,7 +101,7 @@ const Nav = () => {
             </Text>
           </NavLink>
         </Link>
-        <NavLink as="a" href="/cv/catherine_campbell.pdf">
+        <NavLink as="a" href="/cv">
           CV
         </NavLink>
         <Link href="/portfolio" passHref>
