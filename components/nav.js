@@ -1,13 +1,13 @@
 import {
   useColorMode,
-  Avatar,
   Box,
   Container,
   IconButton,
-  Image,
   Flex,
-  NavLink
+  NavLink,
 } from 'theme-ui'
+import { useRouter } from 'next/router'
+import Image from 'next/image'
 import Link from 'next/link'
 import { Moon } from 'react-feather'
 
@@ -20,82 +20,100 @@ const NavButton = ({ sx, ...props }) => (
       transition: 'box-shadow .125s ease-in-out',
       ':hover,:focus': {
         boxShadow: '0 0 0 2px',
-        outline: 'none'
+        outline: 'none',
       },
-      ...sx
+      ...sx,
     }}
   />
 )
 
-const ColorSwitcher = props => {
+const ColorSwitcher = (props) => {
   const [mode, setMode] = useColorMode()
   return (
     <NavButton
       {...props}
       onClick={() => setMode(mode === 'dark' ? 'light' : 'dark')}
-      title="Invert Colors"
+      title="Invert colors"
     >
       <Moon size={24} />
     </NavButton>
   )
 }
 
-const Nav = () => (
-  <Box
-    as="nav"
-    sx={{
-      color: 'text',
-      py: 4
-    }}
-    key="nav"
-  >
-    <Container
+const Nav = () => {
+  const { pathname } = useRouter()
+  return (
+    <Box
+      as="nav"
       sx={{
-        display: 'flex',
-        alignItems: 'center',
-        a: {
-          fontSize: 2,
-          color: 'text',
-          fontWeight: 'body',
-          textDecoration: 'none',
-          mr: [3, 4],
-          ':focus,:hover': { color: 'muted' }
-        }
+        color: 'text',
+        pt: 4,
+        pb: [3, 4],
       }}
+      key="nav"
     >
-      <Link href="/" passHref>
-        <Flex
-          as="a"
-          sx={{
-            alignItems: 'center',
-            mr: 'auto !important'
-          }}
-        >
-          <Avatar
-            size={36}
-            src="https://pbs.twimg.com/profile_images/1183120867108294658/-E2c7IEI_400x400.jpg"
-            alt="Avatar"
-            sx={{ display: ['inline-block', 'none'], mr: 2 }}
-          />
-          <NavLink
-            as="span"
+      <Container
+        sx={{
+          display: 'flex',
+          alignItems: 'center',
+          a: {
+            fontSize: 2,
+            color: 'text',
+            fontWeight: 'body',
+            textDecoration: 'none',
+            mr: 4,
+            ':focus,:hover': { color: 'muted' },
+          },
+        }}
+      >
+        <Link href="/" passHref>
+          <Flex
+            as="a"
             sx={{
-              display: ['none', 'inline-block'],
-              fontWeight: 'bold !important',
-              ':focus,:hover': { color: 'muted' }
+              alignItems: 'center',
             }}
           >
-            Catherine Campbell
-          </NavLink>
-        </Flex>
-      </Link>
-      <NavLink href="/cv.pdf">CV</NavLink>
-      <Link href="/portfolio" passHref>
-        <NavLink>Portfolio</NavLink>
-      </Link>
-      <ColorSwitcher />
-    </Container>
-  </Box>
-)
+            {pathname !== '/' && (
+              <Box
+                as="a"
+                sx={{
+                  width: 48,
+                  height: 48,
+                  borderRadius: 'circle',
+                  overflow: 'hidden',
+                  display: ['inline-block', 'none'],
+                  mr: 2,
+                }}
+              >
+                <Image
+                  width={400}
+                  height={400}
+                  src="/avatar.jpg"
+                  alt="Catherine's avatar"
+                />
+              </Box>
+            )}
+            <NavLink
+              sx={{
+                display: ['none', 'inline-block'],
+                fontWeight: 'bold !important',
+                ':focus,:hover': { color: 'muted' },
+              }}
+            >
+              Catherine Campbell
+            </NavLink>
+          </Flex>
+        </Link>
+        <NavLink href="/cv.pdf" sx={{ ml: 'auto' }}>
+          CV
+        </NavLink>
+        <Link href="/portfolio" passHref>
+          <NavLink>Portfolio</NavLink>
+        </Link>
+        <ColorSwitcher />
+      </Container>
+    </Box>
+  )
+}
 
 export default Nav
