@@ -78,8 +78,10 @@ const theme = merge(base, {
   breakpoints,
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   fontSizes: [16, 20, 24, 32, 48, 64, 96, 128],
+  config:{
   initialColorMode: 'light',
   useColorSchemeMediaQuery: true,
+  },
   colors: {
     ...palette,
     text: palette.black,

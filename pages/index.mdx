@@ -4,13 +4,13 @@ export default Layout
 import { Container, Flex, Button } from 'theme-ui'
 import { Mail, Twitter, BookOpen } from 'react-feather'
 import Image from 'next/image'
+import portraitImg from '../public/portrait.jpg'
 
 <Image
   alt="Portrait of Catherine Campbell smiling"
-  src="/portrait.jpg"
-  width={1024}
-  height={1536}
+  src={portraitImg}
   layout="responsive"
+  placeholder="blur"
   priority
 />
 

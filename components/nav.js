@@ -10,6 +10,7 @@ import { useRouter } from 'next/router'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Moon } from 'react-feather'
+import avatarImg from '../public/avatar.jpg'
 
 const NavButton = ({ sx, ...props }) => (
   <IconButton
@@ -82,9 +83,8 @@ const Nav = () => {
                 }}
               >
                 <Image
-                  width={400}
-                  height={400}
-                  src="/avatar.jpg"
+                  src={avatarImg}
+              placeholder="blur"
                   alt="Catherine's avatar"
                 />
               </Box>
