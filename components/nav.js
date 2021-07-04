@@ -72,13 +72,16 @@ const Nav = () => {
         <Link href="/" passHref>
           <NavLink
             sx={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: 3,
               height: 48,
               flexGrow: 1,
-              img: {
+              '> div': {
+                mr: 3,
                 width: 48,
                 height: 48,
                 borderRadius: 'circle',
-                overflow: 'hidden',
                 display: ['inline-block', 'none']
               }
             }}
@@ -94,7 +97,7 @@ const Nav = () => {
               as="span"
               sx={{
                 display: ['none', 'inline-block'],
-                fontWeight: 'bold !important',
+                fontWeight: 'bold',
                 ':focus,:hover': { color: 'muted' }
               }}
             >
