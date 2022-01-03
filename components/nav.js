@@ -4,7 +4,7 @@ import {
   Container,
   IconButton,
   NavLink,
-  Text
+  Text,
 } from 'theme-ui'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
@@ -23,14 +23,14 @@ const NavButton = ({ sx, ...props }) => (
       height: 48,
       ':hover,:focus': {
         boxShadow: '0 0 0 2px',
-        outline: 'none'
+        outline: 'none',
       },
-      ...sx
+      ...sx,
     }}
   />
 )
 
-const ColorSwitcher = props => {
+const ColorSwitcher = (props) => {
   const [mode, setMode] = useColorMode()
   return (
     <NavButton
@@ -51,7 +51,7 @@ const Nav = () => {
       sx={{
         color: 'text',
         pt: 4,
-        pb: [3, 4]
+        pb: [3, 4],
       }}
       key="nav"
     >
@@ -65,8 +65,8 @@ const Nav = () => {
             fontWeight: 'body',
             textDecoration: 'none',
             mr: [3, 4],
-            ':focus,:hover': { color: 'muted' }
-          }
+            ':focus,:hover': { color: 'muted' },
+          },
         }}
       >
         <Link href="/" passHref>
@@ -77,13 +77,13 @@ const Nav = () => {
               gap: 3,
               height: 48,
               flexGrow: 1,
-              '> div': {
+              '> span': {
                 mr: 3,
                 width: 48,
                 height: 48,
                 borderRadius: 'circle',
-                display: ['inline-block', 'none']
-              }
+                display: ['inline-block', 'none'],
+              },
             }}
           >
             {pathname !== '/' && (
@@ -91,6 +91,8 @@ const Nav = () => {
                 src={avatarImg}
                 placeholder="blur"
                 alt="Catherine's avatar"
+                width={48}
+                height={48}
               />
             )}
             <Text
@@ -98,7 +100,7 @@ const Nav = () => {
               sx={{
                 display: ['none', 'inline-block'],
                 fontWeight: 'bold',
-                ':focus,:hover': { color: 'muted' }
+                ':focus,:hover': { color: 'muted' },
               }}
             >
               Catherine Campbell

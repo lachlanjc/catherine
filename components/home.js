@@ -1,13 +1,13 @@
 import { Container, Flex } from 'theme-ui'
 
-export const Actions = props => (
+export const Actions = (props) => (
   <Flex
     sx={{ flexWrap: 'wrap', alignItems: 'center', a: { mr: 4 } }}
     {...props}
   />
 )
 
-const Banner = props => (
+const Banner = (props) => (
   <Container
     {...props}
     sx={{
@@ -18,25 +18,25 @@ const Banner = props => (
       alignItems: 'center',
       'p:first-of-type': {
         gridRow: [2, 'auto'],
-        my: 0
+        my: 0,
       },
-      '> div': {
+      '> span': {
         borderRadius: 'extra',
-        overflow: 'hidden'
+        overflow: 'hidden',
       },
       h1: {
         fontSize: [4, 5],
         fontWeight: 'heading',
         lineHeight: 'tight',
         mt: [0, -2, -3],
-        mb: 3
+        mb: 3,
       },
       h2: {
         fontSize: [2, 3],
         fontWeight: 'normal',
         lineHeight: 'subheading',
-        mb: 4
-      }
+        mb: 4,
+      },
     }}
   />
 )
