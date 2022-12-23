@@ -113,9 +113,6 @@ const Nav = () => {
         <Link href="/portfolio" passHref>
           <NavLink>Portfolio</NavLink>
         </Link>
-        <Link href="/tutoring" passHref>
-          <NavLink>Tutoring</NavLink>
-        </Link>
         <ColorSwitcher />
       </Container>
     </Box>
