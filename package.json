@@ -5,22 +5,25 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "next",
+    "dev": "next --turbo",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
-    "@emotion/react": "^11.7.1",
-    "@emotion/styled": "^11.6.0",
-    "@mdx-js/loader": "^1.6.22",
-    "@mdx-js/react": "^1.6.22",
-    "@next/mdx": "^12.0.7",
-    "@theme-ui/preset-base": "^0.13.0",
-    "next": "^12.1.0",
-    "nprogress": "^0.2.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-feather": "^2.0.9",
-    "theme-ui": "^0.13.0"
+    "@mdx-js/loader": "^2.3.0",
+    "@mdx-js/react": "^2.3.0",
+    "@next/mdx": "^13.4.3",
+    "@types/mdx": "^2.0.5",
+    "next": "^13.4.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-feather": "^2.0.10"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.3.2",
+    "typescript": "5.0.4"
   }
 }
