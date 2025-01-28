@@ -1,12 +1,12 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-// import { House, Github } from 'react-bootstrap-icons'
+import { House, Github } from 'react-bootstrap-icons'
 import './globals.css'
 
 const Header = () => (
   <header className="container mx-auto max-w-6xl px-3 py-8 flex gap-4 items-center justify-between">
     <Link href="/" title="Homepage">
-      {/* <House size={24} aria-hidden /> */}
+      <House size={24} aria-hidden />
     </Link>
     <nav className="flex gap-6 md:gap-8 text-lg">
       <Link
@@ -31,7 +31,7 @@ const Footer = () => (
       className="flex items-center justify-center gap-3 text-stone-600 hover:text-stone-500 transition-colors"
       href="https://github.com/lachlanjc/catherine"
     >
-      {/* <Github size={20} aria-hidden /> */}
+      <Github size={20} aria-hidden />
       View source code
     </a>
   </footer>
