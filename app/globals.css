@@ -1,3 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+:root {
+  --font-serif: ui-serif, Athelas, Georgia, Cambria, 'Times New Roman', Times,
+    serif;
+}
