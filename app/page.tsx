@@ -1,5 +1,5 @@
 import Button from './button'
-import { Mail } from 'react-feather'
+import { Envelope } from 'react-bootstrap-icons'
 
 import Image from 'next/image'
 import portraitImg from '../public/portrait.jpg'
@@ -20,7 +20,7 @@ export default function Page() {
         <Content />
         <div className="not-prose flex flex-wrap items-center gap-4">
           <Button href="mailto:catherine.campbell617@gmail.com">
-            <Mail aria-hidden />
+            <Envelope aria-hidden />
             Email me
           </Button>
           <Button href="https://campuspress.yale.edu/catherinecampbell/">
