@@ -14,6 +14,7 @@
     "@mdx-js/react": "^3.1.0",
     "@next/mdx": "^15.1.6",
     "@tailwindcss/postcss": "^4.0.0",
+    "@tailwindcss/typography": "^0.5.16",
     "@types/mdx": "^2.0.13",
     "next": "^15.1.6",
     "postcss": "^8.5.1",
