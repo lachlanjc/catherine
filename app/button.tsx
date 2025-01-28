@@ -1,10 +1,10 @@
-import type { PropsWithChildren } from 'react'
-
 export default function Button({
   primary = true,
   className,
   ...props
-}: PropsWithChildren<'a'> & { primary?: boolean }) {
+}: React.PropsWithChildren<React.ComponentPropsWithRef<'a'>> & {
+  primary?: boolean
+}) {
   return (
     <a
       {...props}

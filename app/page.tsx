@@ -23,10 +23,7 @@ export default function Page() {
             <Mail aria-hidden />
             Email me
           </Button>
-          <Button
-            variant="muted"
-            href="https://campuspress.yale.edu/catherinecampbell/"
-          >
+          <Button href="https://campuspress.yale.edu/catherinecampbell/">
             M.Div. Portfolio
           </Button>
           (she/her)
