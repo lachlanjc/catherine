@@ -1,3 +1,9 @@
+---
+layout: ../layouts/Layout.astro
+---
+
+<article class="container mx-auto max-w-3xl px-3 pt-8 pb-12 md:py-12 xl:py-16 prose prose-lg prose-stone dark:prose-invert prose-a:font-normal prose-a:text-sky-600 prose-h1:font-extralight prose-h2:font-normal">
+
 # Portfolio
 
 ## Academic Writing
@@ -26,3 +32,5 @@
 - [Invitation to Worship, March 23, 2019, Meeting for Worship with Attention to an End to Family Detention](/berksworship.pdf)
   _Written as Young Adult Engagement Intern, Philadelphia Yearly Meeting, Spring 2019_
 - [Young Adult Friends Epistle, Philadelphia Yearly Meeting Annual Sessions, July 2018](https://www.pym.org/2018-young-adult-friends-epistle/) (co-author)
+
+</article>

@@ -1,0 +1,94 @@
+---
+import "../styles/global.css"
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Catherine Campbell" />
+    <meta property="og:url" content="https://catherinecampbell.me" />
+    <meta name="twitter:site" content="@cthrnlc" />
+    <title>Catherine Campbell</title>
+    <meta property="og:title" content="Catherine Campbell" />
+    <meta name="twitter:title" content="Catherine Campbell" />
+    <meta
+      name="description"
+      content="Worldwide web design engineer in NYC, working on climate at Watershed. NYU ’25, Interactive Media Arts."
+    />
+    <meta
+      property="og:description"
+      content="Worldwide web design engineer in NYC, working on climate at Watershed. NYU ’25, Interactive Media Arts."
+    />
+    <meta
+      name="twitter:description"
+      content="Worldwide web design engineer in NYC, working on climate at Watershed. NYU ’25, Interactive Media Arts."
+    />
+    <meta
+      property="og:image"
+      content="https://catherinecampbell.me/opengraph-image.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content="https://catherinecampbell.me/opengraph-image.png"
+    />
+    <meta name="theme-color" content="oklch(0.67 0.18 117.23)" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="any" />
+    <link
+      rel="apple-touch-icon"
+      href="/apple-icon.png"
+      type="image/png"
+      sizes="180x180"
+    />
+  </head>
+  <body
+    class="bg-amber-50 text-stone-800 dark:bg-stone-900 dark:text-stone-200 font-serif"
+  >
+    <header
+      class="container mx-auto max-w-6xl px-3 py-8 flex gap-4 items-center justify-between"
+    >
+      <a href="/" title="Homepage">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="currentColor"
+          aria-hidden
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"
+          >
+          </path>
+        </svg>
+      </a>
+      <nav class="flex gap-6 md:gap-8 text-lg">
+        <a
+          href="/cv/campbell_catherine.pdf"
+          class="hover:opacity-80 hover:underline underline-offset-4"
+        >
+          CV
+        </a>
+        <a
+          href="/portfolio"
+          class="hover:opacity-80 hover:underline underline-offset-4"
+        >
+          Portfolio
+        </a>
+      </nav>
+    </header>
+    <slot />
+    <footer class="text-center px-2 py-3 md:py-4">
+      <a
+        class="flex items-center justify-center gap-3 text-stone-600 dark:text-stone-400 hover:text-stone-500 transition-colors"
+        href="https://github.com/lachlanjc/catherine"
+      >
+        View source code
+      </a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-serif: ui-serif, Athelas, Georgia, Cambria, "Times New Roman", Times,
+    serif;
+}
+
+@view-transition {
+  navigation: auto;
+}
